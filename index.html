@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Portfolio Website">
+    <title>My Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Portfolio.</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="btn btn-primary">Let's Talk</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="eyebrow">Hello, I'm</span>
+                    <h1 class="headline">Sudhersan V <br><span class="gradient-text">Creative Developer</span></h1>
+                    <p class="hero-description">
+                        Building digital experiences with passion and precision.
+                        Connect with me on LinkedIn to see my professional journey.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View Work</a>
+                        <a href="https://www.linkedin.com/in/sudhersan-v-457434289" target="_blank"
+                            class="btn btn-outline">LinkedIn Profile</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <canvas id="hero-canvas"></canvas>
+                    <div class="glow-orb"></div>
+                    <!-- Placeholder for specific image or 3D element -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-image">
+                        <!-- 
+                            TO ADD YOUR PHOTO:
+                            1. Save your photo as 'profile.jpg' in this folder.
+                            2. Uncomment the line below (remove <!-- and -->):
+                        <img src="profile.jpg" alt="Sudhersan V" style="border-radius: 16px;">
+                        3. Remove the 'Default Avatar' div below.
+                        -->
+
+                        <!-- Default Avatar -->
+                        <div class="image-placeholder"
+                            style="display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #1a1a1a, #0a0a0a); border: 2px solid #333;">
+                            <span
+                                style="font-size: 8rem; font-weight: 900; background: var(--gradient-primary); -webkit-background-clip: text; background-clip: text; color: transparent; opacity: 0.5;">S</span>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>Passionate about creating digital masterpieces.</h3>
+                        <p>
+                            With a strong foundation in modern web technologies, I specialize in building websites that
+                            are not just functional but memorable.
+                            I love exploring new design trends and pushing the boundaries of what's possible on the web.
+                        </p>
+                        <ul class="skills-list">
+                            <li>JavaScript (ES6+)</li>
+                            <li>HTML5 & CSS3</li>
+                            <li>Responsive Design</li>
+                            <li>UI/UX Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Qualifications Section -->
+        <section id="qualifications" class="qualifications section">
+            <div class="container">
+                <h2 class="section-title">Qualifications</h2>
+                <div class="timeline">
+                    <!-- Qualification Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>BE ECE</h3>
+                            <span class="date">2020 - 2024</span>
+                            <p>Electronics & Communication Engineering</p>
+                            <p class="institution">Surya Group of Institutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="skills-grid">
+                    <!-- Hardware & IoT -->
+                    <div class="skill-category">
+                        <h3>Hardware & IoT</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Embedded Systems & IoT</span>
+                            <span class="skill-tag">PCB Design</span>
+                            <span class="skill-tag">Drone Pilot</span>
+                            <span class="skill-tag">Networking</span>
+                        </div>
+                    </div>
+                    <!-- Software Development -->
+                    <div class="skill-category">
+                        <h3>Software Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">HTML & CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Frontend Dev</span>
+                        </div>
+                    </div>
+                    <!-- Creative & Tools -->
+                    <div class="skill-category">
+                        <h3>Creative & Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">3D Modeling</span>
+                            <span class="skill-tag">Photoshop</span>
+                            <span class="skill-tag">Premiere Pro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements section">
+            <div class="container">
+                <h2 class="section-title">Achievements</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="badge-icon">🥇</div>
+                        <h3>Title Holder</h3>
+                        <p class="achievement-year">2024</p>
+                        <p>Naan Mudhalvan Hackathon</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="badge-icon">🏆</div>
+                        <h3>Winner - TANSAM 2</h3>
+                        <p class="achievement-year">2025</p>
+                        <p>Tamil Nadu Hackathon Winner</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="badge-icon">🎤</div>
+                        <h3>Workshop Mentor</h3>
+                        <p class="achievement-year">Embedded Systems</p>
+                        <p>St. Mary's Higher Secondary School</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title">Selected Works</h2>
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <article class="project-card">
+                        <div class="card-image"
+                            style="background: linear-gradient(45deg, #1a1a1a, #0f0f0f); display: flex; align-items: center; justify-content: center;">
+                            <i class="ri-cpu-line" style="font-size: 3rem; color: #00f3ff;"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Smart Home IoT System</h3>
+                            <p>Automated control system using ESP32 and Python with custom PCB design.</p>
+                            <a href="#" class="link-arrow">View details &rarr;</a>
+                        </div>
+                    </article>
+                    <!-- Project Card 2 -->
+                    <article class="project-card">
+                        <div class="card-image"
+                            style="background: linear-gradient(45deg, #1a1a1a, #0f0f0f); display: flex; align-items: center; justify-content: center;">
+                            <i class="ri-flight-takeoff-line" style="font-size: 3rem; color: #bc13fe;"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Autonomous Drone</h3>
+                            <p>Custom-built drone with stability augmentation and remote telemetry.</p>
+                            <a href="#" class="link-arrow">View details &rarr;</a>
+                        </div>
+                    </article>
+                    <!-- Project Card 3 -->
+                    <article class="project-card">
+                        <div class="card-image"
+                            style="background: linear-gradient(45deg, #1a1a1a, #0f0f0f); display: flex; align-items: center; justify-content: center;">
+                            <i class="ri-router-line" style="font-size: 3rem; color: #00f3ff;"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Networking Lab Setup</h3>
+                            <p>Advanced routing and switching configuration for secure local networks.</p>
+                            <a href="#" class="link-arrow">View details &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p>
+                        Have a project in mind or just want to say hi?
+                        I'm always open to discussing new ideas and opportunities.
+                    </p>
+                    <a href="mailto:sudhersan505@gmail.com" class="email-link">sudhersan505@gmail.com</a>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/sudhersan-v-457434289" target="_blank"
+                            class="social-btn"><i class="ri-linkedin-fill"></i> LinkedIn</a>
+                        <a href="https://www.instagram.com/single___king_07/" target="_blank" class="social-btn"><i
+                                class="ri-instagram-line"></i> Instagram (@single___king_07)</a>
+                        <a href="https://wa.me/919344966327" target="_blank" class="social-btn"><i
+                                class="ri-whatsapp-line"></i> WhatsApp</a>
+                    </div>
+                </div>
+                <!-- Simple Form Placeholder -->
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Sudhersan V. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
